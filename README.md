@@ -3,4 +3,4 @@ Min virtuelle CPU ser sådan her ud indtil videre. Jeg mangler mest at få det p
 
 Jeg skal også have fundet ud af at få programmet til at køre videre efter den har lavet en HALT handling, da programmet indtil videre bliver termineret når HALT handlingen laves.
 
-Jeg skal også havet lavet en indikator, f.eks en pil, der viser hvor vi er henne unde processen.
+Jeg skal også have lavet en indikator, f.eks en pil, der viser hvor vi er henne under processen.
