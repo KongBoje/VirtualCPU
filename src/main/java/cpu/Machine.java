@@ -23,7 +23,7 @@ public class Machine {
         }
     }
 
-    public void tick() {
+    public void tick() { //Use bit mask to reference what is being pushed, added etc.
         int instr = memory.get(cpu.getIp());
         if (instr == 0b0000_0000) {
             System.out.println("NOP");
@@ -110,7 +110,7 @@ public class Machine {
         } else if (instr == 0b0000_1111) {
             System.out.println("HALT");
             // 0000_1111 HALT
-            cpu.setFlag(false);
+             Halts.halt = true;
         } else if ((instr & 0b1111_1110) == 0b0001_0000) {
             System.out.println("PUSH r");
             // 0001_000r PUSH r. [--SP] ← r; IP++

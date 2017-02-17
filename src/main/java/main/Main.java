@@ -5,6 +5,7 @@
  */
 package main;
 
+import cpu.Halts;
 import cpu.Machine;
 import cpu.Program;
 import java.util.Scanner;
@@ -16,7 +17,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) { //bytes are signed in java which is why some are -56, so you can use an integer with a bit mask.
-        System.out.println("Welcome to the awesome CPU program");
+        System.out.println("Welcome to the awesome CPU program"); //Make a while loop in the program, so when it HALTs it will keep on going and not just completely stop the program.
 
 //        Program program = new Program("00101001", "00001111", "10101010", "MOV B +3");
 //        Program newP = new Program("01001010", "00010000", "00001100", "11000110", 
@@ -36,7 +37,7 @@ public class Main {
         System.out.println("\n-> Press [ENTER] to run next instruction");
         String input = scanner.nextLine();
         
-        while (!input.equalsIgnoreCase("q")) {
+        while (!input.equalsIgnoreCase("q") && Halts.halt == false) {
             machine.tick();
             machine.print(System.out);
             System.out.println("\n-> Press [ENTER] to run next instruction");
