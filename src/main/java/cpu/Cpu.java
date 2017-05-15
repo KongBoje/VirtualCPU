@@ -19,6 +19,7 @@ public class Cpu { //do with int for the same reasons, as memory.
     private int ip = 0;
     private int sp = 0;
     private boolean flag = false;
+    private boolean isRunning = true;
     
     public void decSp(){
         if (sp == 0) sp = Memory.SIZE;
@@ -69,6 +70,14 @@ public class Cpu { //do with int for the same reasons, as memory.
     public void setFlag(boolean flag) {
         this.flag = flag;
     }
+
+    public boolean IsRunning() {
+        return isRunning;
+    }
+
+    public void setIsRunning(boolean isRunning) {
+        this.isRunning = isRunning;
+    }
     
     public void print(PrintStream out){
         out.printf("A:  %4d\n", a);
@@ -78,4 +87,12 @@ public class Cpu { //do with int for the same reasons, as memory.
         out.printf("F:  "+flag);
         out.printf("\n");
     }
+    
+    public String name(int r){
+        if(r == A) {
+            return "A";
+        } else {
+            return "B";
+        }
+    } //Sytem.out.println("PUSH "+cpu.name(r))
 }
