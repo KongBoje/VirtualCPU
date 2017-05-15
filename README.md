@@ -1,6 +1,15 @@
 # VirtualCPU
-Min virtuelle CPU ser sådan her ud indtil videre. Jeg mangler mest at få det printet mere specifikt ud når den laver en handling, sikkert via bit mask, da den indtil videre kun printer ud f.eks. PUSH r når den f.eks. pusher til A.
+This is my virtual CPU.
 
-Jeg skal også have fundet ud af at få programmet til at køre videre efter den har lavet en HALT handling, da programmet indtil videre bliver termineret når HALT handlingen laves.
+It can run three specific programmes.
 
-Jeg skal også have lavet en indikator, f.eks en pil, der viser hvor vi er henne under processen.
+First program it can run is Factorial of 5.
+
+Second program it can run is Calculus of (5+11)*-3
+
+Third program it can run is TailRecursion of Factorial of 5.
+
+## Running the program
+When you run the CPU you get to choose the three options explained above.
+
+Press "f" for Factorial, "c" for Calculus and just Enter for TailRecursion.
