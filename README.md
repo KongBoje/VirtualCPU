@@ -1,2 +1,6 @@
 # VirtualCPU
-Min virtuelle CPU ser sådan her ud indtil videre, jeg mangler mest at få HALT instruktionen til at virke og at få det printet mere specifikt ud når den laver en handling. Indtil videre printer den kun ud f.eks. PUSH r når den f.eks. pusher til A.
+Min virtuelle CPU ser sådan her ud indtil videre. Jeg mangler mest at få det printet mere specifikt ud når den laver en handling, sikkert via bit mask, da den indtil videre kun printer ud f.eks. PUSH r når den f.eks. pusher til A.
+
+Jeg skal også have fundet ud af at få programmet til at køre videre efter den har lavet en HALT handling, da programmet indtil videre bliver termineret når HALT handlingen laves.
+
+Jeg skal også have lavet en indikator, f.eks en pil, der viser hvor vi er henne under processen.
